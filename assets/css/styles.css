@@ -1,0 +1,17 @@
+:root {
+    --max-width: 1080px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header,
+.site-main {
+    padding: 2em;
+}
