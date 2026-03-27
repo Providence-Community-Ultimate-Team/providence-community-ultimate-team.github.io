@@ -246,8 +246,11 @@ a:visited {
     .site-header {
         display: flex;
         align-content: center;
-        height: 15vh;
+        height: 10vh;
         padding: 1em 1.5em;
+    }
+    .header-container {
+        align-items: center;
     }
     .title-container {
         max-width: 80vw;
