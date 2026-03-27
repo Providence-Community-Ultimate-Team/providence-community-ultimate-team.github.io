@@ -5,36 +5,149 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Providence Community Ultimate Team</title>
         <meta name="description" content="a website for all things PCUT-related: pickup info, history, nearby leagues, and more!">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
     </head>
     <body>
         <header class="site-header">
             <div class="header-container">
-                <h1>Providence Community Ultimate Team</h1>
+                <div class="title-container">
+                    <h1>Providence Community Ultimate Team</h1>
+                </div>
+                <div class="desktop-join-button join-button">
+                    <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">Join PCUT</a>
+                </div>
+                <div class="mobile-nav-menu-icon-container">
+                    <div class="mobile-crate-nav-icon" id="mobile-crate-nav-icon" data-target="mobile-crate-container">
+                        <img src="./assets/images/pcut_crate.png">
+                    </div>
+                </div>
+                <div class="mobile-nav-container" id="mobile-nav-container">
+                    <div class="mobile-nav-items-container">
+                        <button type="button" class="mobile-nav-item" data-target="pickup-container">
+                            Pickup
+                        </button>
+                        <button type="button" class="mobile-nav-item" data-target="ultimate-container">
+                            Ultimate
+                        </button>
+                        <button type="button" class="mobile-nav-item" data-target="pcut-container">
+                            PCUT
+                        </button>
+                        <div class="join-button">
+                            <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">Join PCUT</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="site-main">
             <div class="main-container">
-                <h2>Welcome to the PCUT website!</h2>
-                <section>
-                    <h4>Pickup</h4>
-                    <p>We play pickup ultimate frisbee games on Sundays at 11am at Hope High School and Wednesdays at 5pm at India Point Park.</p>
-                    <p>Find us on <a href="https://pickupultimate.com/games/pcut" rel="noreferrer" target="_blank">pickupultimate</a> for more information, especially as game times and locations can change regularly.</p>
-                    <p>We hope to see you on the field!</p>
-                </section>
-                <section>
-                    <h4>Frisbee Leagues</h4>
-                    <dl>
-                        <dt><a href="https://ripul.org" rel="noreferrer" target="_blank">Rhode Island People's Ultimate League (RIPUL)</a></dt>
-                        <dd>RIPUL runs a mixed summer league from May through August. Visit their website for more information, or check out their <a href="https://instagram.com/ripul_ultimate" rel="noreferrer" target="_blank">instagram</a></dd>
-                        <dt><a href="http://www.rhodeislanddiscleague.com/" rel="noreferrer" target="_blank">Rhode Island Disc League (RIDL)</a></dt>
-                        <dd>RIDL runs mixed outdoor spring and fall leagues, as well as two indoor winter leagues each year in Warwick and Tiverton.</dd>
-                        <dt>4v4 League</dt>
-                        <dd>The Johnston 4v4 mixed leagues run concurrently with other league in spring, summer, and fall.</dd>
-                    </dl>
-                </section>
+                <div class="desktop-crate-nav-container">
+                    <div class="desktop-nav-crates">
+                        <div class="crate-nav-icon rotated-crate" id="pickup-crate-icon" data-target="pickup-container">
+                            <img src="./assets/images/pickup_crate.png">
+                        </div>
+                        <div class="crate-nav-icon" id="ultimate-crate-icon" data-target="ultimate-container">
+                            <img src="./assets/images/ultimate_crate.png">
+                        </div>
+                        <div class="crate-nav-icon" id="team-crate-icon" data-target="pcut-container">
+                            <img src="./assets/images/pcut_crate.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-container">
+                    <div class="crate-content-container active" id="pickup-container">
+                        <section>
+                            <h2>Pickup</h2>
+                            <p><em>last updated: March 23, 2026</em></p>
+                            <p>The best way to find out when and where we're playing is to join the email list. So <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">send us an email</a> to get added and come play!</p>
+                            <p>We play on Sunday at 11am at Hope High School and Wednesday at 5pm at India Point Park. The location often changes due to field availability, so all possible locations are listed below. During the summer, the Wednesday game often moves to Thursday to avoid conflicting with the RIPUL summer league. Usually, at least someone is there right at the start time to throw, but sometimes people won't show up until 15-20 minutes after the start time, especially for the 5pm games.</p>
+                            <p>The sunday game is outdoor all year, weather permitting. When Daylight Savings Time ends, the weekday 5pm game typically moves to indoor where we play a 4v4 half-court style game. Information about indoor games is available through the email list.</p>
+                            <p>Some things you'll probably want to bring:</p>
+                            <ul>
+                                <li>Water</li>
+                                <li>A light shirt and a dark shirt (or a grey if you want to get heckled)</li>
+                                <li>Appropriate footwear, recommended:
+                                    <ul>
+                                        <li>Cleats, for grass fields</li>
+                                        <li>Cleats or turf shoes, for turf fields</li>
+                                        <li>Basketball shoes or basketball court appropriate shoes (<strong>required</strong> for indoor)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>You can also find us on <a href="https://pickupultimate.com/games/pcut" rel="noreferrer" target="_blank">pickupultimate</a>.</p>
+                            <p>We hope to see you on the field!</p>
+                        </section>
+                        <section>
+                            <h3>Main Fields</h3>
+                            <div class="field-cards-container">
+                                <div class="field-card">
+                                    <h4>Hope High School</h4>
+                                    <p class="field-type">Grass Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1188.3045022092251!2d-71.40328681119668!3d41.83483078640261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1774305571525!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Park at the school or on any of the surrounding streets.</p>
+                                </div>
+                                <div class="field-card">
+                                    <h4>Berylson Family Fields</h4>
+                                    <p class="field-type">Turf Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2415.419625483149!2d-71.39628529074861!3d41.832084513381744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e445261ba308d7%3A0xa3156b139970afa6!2sBerylson%20Family%20Fields!5e1!3m2!1sen!2sus!4v1774232739706!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Park on Lloyd Ave and walk in.</p>
+                                </div>
+                                <div class="field-card">
+                                    <h4>Gano Park</h4>
+                                    <p class="field-type">Grass Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.0330390740705!2d-71.39119957135159!3d41.82341000924871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e445311260aedd%3A0x22d66833572cf460!2sGano%20Park!5e1!3m2!1sen!2sus!4v1774305749596!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Park in the lot next to the field.</p>
+                                </div>
+                                <div class="field-card">
+                                    <h4>India Point Park</h4>
+                                    <p class="field-type">Grass Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.62462781059!2d-71.39093640076776!3d41.81758554118895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e445364513eca3%3A0xeab7053d8ae3aedf!2sIndia%20Point%20Park%20Parking%20Lot%2C%20Gano%20St%2C%20Providence%2C%20RI%2002903!5e1!3m2!1sen!2sus!4v1774306087632!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>There's a small lot next ot the field and street parking. You may need to park farther away along India St when the park and brewery are busy.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Smaller Fields and Throwing Locations</h3>
+                            <div class="field-cards-container">
+                                <div class="field-card">
+                                    <h4>Pembroke Field</h4>
+                                    <p class="field-type">Grass Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.401684431505!2d-71.40022369203415!3d41.82959616914518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4452460d63c3b%3A0xf5d86515f344b374!2sPembroke%20Field!5e1!3m2!1sen!2sus!4v1774306167763!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Park on any of the surrounding streets. Maybe don't wear your cleats.</p>
+                                </div>
+                                <div class="field-card">
+                                    <h4>Sessions Street Park</h4>
+                                    <p class="field-type">Grass Field</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.1770053507967!2d-71.39242811838433!3d41.84169745928681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e444d11e39490d%3A0xcdd58b0c6304e704!2sSessions%20Street%20Park!5e1!3m2!1sen!2sus!4v1774306245053!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Park on Sessions St.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="crate-content-container" id="ultimate-container">
+                        <section>
+                            <h2>Community Ultimate</h2>
+                            <p>There are all kinds of leagues around!</p>
+                        </section>
+                        <section>
+                            <h4>Frisbee Leagues</h4>
+                            <dl>
+                                <dt><a href="https://ripul.org" rel="noreferrer" target="_blank">Rhode Island People's Ultimate League (RIPUL)</a></dt>
+                                <dd>RIPUL runs a mixed summer league from May through August. Visit their website for more information, or check out their <a href="https://instagram.com/ripul_ultimate" rel="noreferrer" target="_blank">instagram</a></dd>
+                                <dt><a href="http://www.rhodeislanddiscleague.com/" rel="noreferrer" target="_blank">Rhode Island Disc League (RIDL)</a></dt>
+                                <dd>RIDL runs mixed outdoor spring and fall leagues, as well as two indoor winter leagues each year in Warwick and Tiverton.</dd>
+                                <dt>4v4 League</dt>
+                                <dd>The Johnston 4v4 mixed leagues run concurrently with other league in spring, summer, and fall.</dd>
+                            </dl>
+                        </section>
+                    </div>
+                </div>
             </div>
         </main>
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
