@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
     font-weight: bold;
     color: var(--dark-blue);
 }
-h2, h3, h4 {
+h2, h3 {
     margin: 0 0 1em 0;
 }
 h1 {
@@ -48,13 +48,17 @@ h3 {
     font-size: 1.25em;
 }
 h4 {
+    margin: 0;
     font-size: 1em;
 }
 
 p {
+    max-width: 750px;
     font-size: 1em;
     color: var(--black);
-    max-width: 750px;
+}
+.card p {
+    margin: 0;
 }
 
 a:link {
@@ -200,33 +204,51 @@ a:visited {
     display: block;
 }
 
-.field-cards-container {
+.cards-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     gap: 2em;
 }
 
-.field-card {
+.card {
     display: flex;
     flex-direction: column;
     flex: 0 1 40%;
-    /* max-width: 600px; */
+    gap: 1em;
+    min-width: 250px;
+    max-width: 400px;
     padding: 1em;
     background: var(--off-white);
     border-radius: 2px;
 }
 
-.field-card iframe {
-    aspect-ratio: 1 / 1 !important;
-    min-width: 250px;
+a.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    transition: all 0.s ease;
 }
 
-.field-type {
+a.image-container:hover {
+    transform: scale(1.01);
+}
+
+.card .image-container img {
+    max-width: 90%;
+}
+
+.card iframe {
+    aspect-ratio: 1 / 1 !important;
+}
+
+.card-subtitle {
     margin-top: 0;
     color: var(--dark-green);
     font-family: "Inter";
     font-weight: bold;
+    font-style: italic;
 }
 
 @media screen and (width > 768px) {
@@ -272,6 +294,9 @@ a:visited {
     .main-content-container {
         max-width: var(--max-width);
         padding: 2em;
+    }
+    .cards-container {
+        justify-content: flex-start;
     }
 }
 
