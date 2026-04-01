@@ -18,14 +18,18 @@ mobileMenuItems.forEach(btn => {
 function switchCrates(e) {
     crateNavIcons.forEach(icon => {
         const targetId = icon.getAttribute("data-target");
+        const menuId = icon.getAttribute("data-menu");
         const target = document.getElementById(targetId);
+        const menu = document.getElementById(menuId);
         if (icon == e.currentTarget) {
             icon.classList.toggle("rotated-crate");
             target.classList.toggle("active");
+            menu.classList.toggle("active");
         } else {
             if (icon.classList.contains("rotated-crate")) {
                 icon.classList.remove("rotated-crate");
                 target.classList.remove("active");
+                menu.classList.remove("active");
             }
         }
     });

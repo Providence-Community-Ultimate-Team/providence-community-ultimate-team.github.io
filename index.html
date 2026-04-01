@@ -33,9 +33,9 @@
                         <button type="button" title="Community Ultimate" class="mobile-nav-item" data-target="ultimate-container">
                             Ultimate
                         </button>
-                        <button type="button" title="PCUT" class="mobile-nav-item" data-target="pcut-container">
+                        <!-- <button type="button" title="PCUT" class="mobile-nav-item" data-target="pcut-container">
                             PCUT
-                        </button>
+                        </button> -->
                         <div class="join-button">
                             <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">Join PCUT</a>
                         </div>
@@ -47,20 +47,34 @@
             <div class="main-container">
                 <div class="desktop-crate-nav-container">
                     <div class="desktop-nav-crates">
-                        <div title="Pickup Ultimate" class="crate-nav-icon rotated-crate" id="pickup-crate-icon" data-target="pickup-container">
-                            <img src="./assets/images/pickup_crate.png">
+                        <div id="pickup-menu" class="desktop-crate-menu-container active">
+                            <div title="Pickup Ultimate" class="crate-nav-icon rotated-crate" id="pickup-crate-icon" data-target="pickup-container" data-menu="pickup-menu">
+                                <img src="./assets/images/pickup_crate.png">
+                            </div>
+                            <div id="pickup-submenu" class="desktop-crate-submenu-container">
+                                <a href="#pickup-info" class="desktop-submenu-item">Pickup Info</a>
+                                <a href="#field-locations" class="desktop-submenu-item">Main Fields</a>
+                                <a href="#small-fields" class="desktop-submenu-item">Small Fields</a>
+                            </div>
                         </div>
-                        <div title="Community Ultimate" class="crate-nav-icon" id="ultimate-crate-icon" data-target="ultimate-container">
-                            <img src="./assets/images/ultimate_crate.png">
+                        <div id="ultimate-menu" class="desktop-crate-menu-container">
+                            <div title="Community Ultimate" class="crate-nav-icon" id="ultimate-crate-icon" data-target="ultimate-container" data-menu="ultimate-menu">
+                                <img src="./assets/images/ultimate_crate.png">
+                            </div>
+                            <div id="ultimate-submenu" class="desktop-crate-submenu-container">
+                                <a href="#club-teams" class="desktop-submenu-item">Club</a>
+                                <a href="#leagues" class="desktop-submenu-item">League</a>
+                                <a href="#tournaments" class="desktop-submenu-item">Tournaments</a>
+                            </div>
                         </div>
-                        <div title="PCUT" class="crate-nav-icon" id="team-crate-icon" data-target="pcut-container">
+                        <!-- <div title="PCUT" class="crate-nav-icon" id="team-crate-icon" data-target="pcut-container">
                             <img src="./assets/images/pcut_crate.png">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="main-content-container">
                     <div class="crate-content-container active" id="pickup-container">
-                        <section>
+                        <section id="pickup-info">
                             <h2>Pickup</h2>
                             <p><em>last updated: March 23, 2026</em></p>
                             <p>The best way to find out when and where we're playing is to join the email list. So <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">send us an email</a> to get added and come play!</p>
@@ -80,6 +94,9 @@
                             </ul>
                             <p>You can also find us on <a href="https://pickupultimate.com/games/pcut" rel="noreferrer" target="_blank">pickupultimate</a>.</p>
                             <p>We hope to see you on the field!</p>
+                            <div class="join-button">
+                                <a href="mailto:PCUT.frisbee@gmail.com?subject=Please add me to the mailing list!">Join PCUT</a>
+                            </div>
                         </section>
                         <section id="field-locations">
                             <h3>Main Fields</h3>
@@ -110,7 +127,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section>
+                        <section id="small-fields">
                             <h3>Smaller Fields and Throwing Locations</h3>
                             <div class="cards-container">
                                 <div class="card">
@@ -131,16 +148,37 @@
                     <div class="crate-content-container" id="ultimate-container">
                         <section>
                             <h2>Community Ultimate</h2>
-                            <p>PCUT players participate in many leagues, club teams, and tournaments in the Rhode Island and southern Massachusetts area.</p>
+                            <p>PCUT members play with various club teams and in many leagues and tournaments in the Rhode Island and southern Massachusetts area.</p>
                         </section>
-                        <section>
+                        <section id="club-teams">
+                            <h3>Local Club Teams</h3>
+                            <div class="cards-container">
+                                <div class="card">
+                                    <a href="https://www.instagram.com/quahogsultimate" class="image-container" rel="noreferrer" target="_blank" title="Quahogs Instagram">
+                                        <img src="./assets/images/quahogs_logo.jpg">
+                                    </a>
+                                    <h4>Quahogs</h4>
+                                    <p class="card-subtitle">Mixed - Providence, RI</p>
+                                    <p>Open tryouts start May 3, 2026! <a href="https://www.instagram.com/quahogsultimate/p/DWZMnH1EaUz/" rel="noreferrer" target="_blank">Click here for more info</a>.</p>
+                                    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSel7UfBuv71vTUdqS_if55oITHZdLwOtJijTkuV3fwOTagfVA/viewform" rel="_norefferer" target="_blank" title="2026 Quahogs Tryout Form">2026 Tryout Interest Form</a></p>
+                                </div>
+                                <div class="card">
+                                    <a href="https://www.instagram.com/riptideulti" class="image-container" rel="noreferrer" target="_blank" title="Riptide Instagram">
+                                        <img src="./assets/images/riptide_jersey_dark.jpg">
+                                    </a>
+                                    <h4>Riptide</h4>
+                                    <p class="card-subtitle">Open - Riverside, RI</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="leagues">
                             <h3>Leagues</h3>
                             <div class="cards-container">
                                 <div class="card">
                                     <a href="https://ripul.org" class="image-container" rel="noreferrer" target="_blank" title="RIPUL website">
                                         <img src="./assets/images/ripul_logo.png">
                                     </a>
-                                    <h4>RI People's Ultimate League (RIPUL)</h4>
+                                    <h4>RI Peoples' Ultimate League (RIPUL)</h4>
                                     <p class="card-subtitle">Summer</p>
                                     <p>RIPUL runs a mixed summer league from May through August. Visit their website for more information.</p>
                                 </div>
@@ -159,22 +197,19 @@
                                 </div>
                             </div>
                         </section>
-                        <section>
-                            <h3>Local Club Teams</h3>
+                        <section id="tournaments">
+                            <h3>Tournaments</h3>
                             <div class="cards-container">
                                 <div class="card">
-                                    <a href="https://www.instagram.com/quahogsultimate" class="image-container" rel="noreferrer" target="_blank" title="Quahogs Instagram">
-                                        <img src="./assets/images/quahogs_logo.jpg">
-                                    </a>
-                                    <h4>Quahogs</h4>
-                                    <p class="card-subtitle">Mixed - Providence, RI</p>
-                                </div>
-                                <div class="card">
-                                    <a href="https://www.instagram.com/riptideulti" class="image-container" rel="noreferrer" target="_blank" title="Riptide Instagram">
-                                        <!-- <img src="./assets/images/quahogs_logo.jpg"> -->
-                                    </a>
-                                    <h4>Riptide</h4>
-                                    <p class="card-subtitle">Open - Riverside, RI</p>
+                                    <div class="image-container">
+                                        <img src="./assets/images/friends-in-small-places-2026-logo.png">
+                                    </div>
+                                    <h4>Friends in Small Places</h4>
+                                    <p class="card-subtitle">Mixed Hat Tournament - Warwick, RI - Spring</p>
+                                    <div class="image-credit">
+                                        <p><cite>Friends in Small Places, 2026</cite></p>
+                                        <p>design by Emmeline Zhu</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
